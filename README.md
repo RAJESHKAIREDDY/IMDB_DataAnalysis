@@ -1,7 +1,5 @@
 # IMDB_DataAnalysis
 
-# IMDB_DataAnalysis
-
 ## Data Staging: Loading and Cleaning Data from Various Sources
 
 In the staging phase, data is loaded from various sources, including CSV, TSV, and DB backup files. The data encompasses movies, TV shows, short movies, videos, box office brands, franchises, and genres.
