@@ -1,5 +1,7 @@
 # IMDB_DataAnalysis
 
+![Alt text](image.png)
+
 ## Data Staging: Loading and Cleaning Data from Various Sources
 
 In the staging phase, data is loaded from various sources, including CSV, TSV, and DB backup files. The data encompasses movies, TV shows, short movies, videos, box office brands, franchises, and genres.
@@ -22,7 +24,6 @@ Before loading data into staging tables, it is crucial to implement a validation
 
 The above components are utilized within the staging phase to clean the raw data. This includes handling null values, special characters, and converting data types to match the corresponding fields derived from different sources. The cleaned data is then prepared for further processing in the integration stage.
 
-
 ## Data Integration and Quality Processes
 
 ### Data Consistency and Dimensional Modeling
@@ -43,18 +44,18 @@ To maintain data integrity, a rejection processing mechanism is incorporated dur
 
 These processes collectively ensure data consistency, integrity, and quality throughout the integration stage, promoting accurate analysis and reliable insights.
 
-
-
 ## Workflow Tracking and Data Consistency
 
 In every Talend job, the following practices are implemented to track the workflow and ensure data consistency:
 
 1. Mandatory Data Fields:
+
    - All rows processed in the job must have the DI_JobID and DI_CreateDT fields filled in.
    - DI_JobID provides a unique identifier for each record, facilitating traceability and association with a specific job.
    - DI_CreateDT captures the creation timestamp, enabling temporal tracking and auditing of the data.
 
 2. Job Statistics Processing Joblets:
+
    - Each job incorporates Job Statistics Processing Joblets to capture runtime information.
    - These Joblets log essential details such as start time, end time, duration, and other pertinent statistics.
    - The collected runtime data serves as valuable metrics for monitoring and analysis.
@@ -65,41 +66,3 @@ In every Talend job, the following practices are implemented to track the workfl
    - It enables comprehensive monitoring, analysis, and reporting of job performance.
 
 By adhering to these practices, i established a standardized workflow tracking mechanism across Talend jobs. The mandatory data fields ensure consistent metadata capture, while the Job Statistics Processing Joblets and DI_CNTL database provide insights into job runtime and facilitate comprehensive monitoring and analysis.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
