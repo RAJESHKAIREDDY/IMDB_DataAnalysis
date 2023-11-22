@@ -1,8 +1,8 @@
-# IMDB_DataAnalysis
+# IMDB Data Warehousing and Business Intelligence
 
 ![Alt text](image.png)
 
-## Data Staging: Loading and Cleaning Data from Various Sources
+## Data Staging:
 
 In the staging phase, data is loaded from various sources, including CSV, TSV, and DB backup files. The data encompasses movies, TV shows, short movies, videos, box office brands, franchises, and genres.
 
@@ -24,7 +24,7 @@ Before loading data into staging tables, it is crucial to implement a validation
 
 The above components are utilized within the staging phase to clean the raw data. This includes handling null values, special characters, and converting data types to match the corresponding fields derived from different sources. The cleaned data is then prepared for further processing in the integration stage.
 
-## Data Integration and Quality Processes
+## Data Integration
 
 ### Data Consistency and Dimensional Modeling
 
